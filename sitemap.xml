@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog-hugo.joshdover.com/about/</loc>
+    <lastmod>2018-01-18T04:04:43+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog-hugo.joshdover.com/post/tech-ethics-addictive-technology/</loc>
     <lastmod>2018-05-28T22:57:43+00:00</lastmod>
   </url>
@@ -23,11 +28,6 @@
   </url>
   
   <url>
-    <loc>https://blog-hugo.joshdover.com/about/</loc>
-    <lastmod>2018-01-18T04:04:43+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog-hugo.joshdover.com/post/why-the-basecamp-way-of-product-management-doesnt-work-for-us/</loc>
     <lastmod>2017-06-01T01:55:00+00:00</lastmod>
   </url>
@@ -43,13 +43,13 @@
   </url>
   
   <url>
-    <loc>https://blog-hugo.joshdover.com/categories/ethics/</loc>
+    <loc>https://blog-hugo.joshdover.com/tags/ethics/</loc>
     <lastmod>2018-05-28T22:57:43+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog-hugo.joshdover.com/tags/ethics/</loc>
+    <loc>https://blog-hugo.joshdover.com/categories/ethics/</loc>
     <lastmod>2018-05-28T22:57:43+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -61,13 +61,13 @@
   </url>
   
   <url>
-    <loc>https://blog-hugo.joshdover.com/categories/leadership/</loc>
+    <loc>https://blog-hugo.joshdover.com/tags/leadership/</loc>
     <lastmod>2018-03-19T11:28:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog-hugo.joshdover.com/tags/leadership/</loc>
+    <loc>https://blog-hugo.joshdover.com/categories/leadership/</loc>
     <lastmod>2018-03-19T11:28:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -79,20 +79,14 @@
   </url>
   
   <url>
-    <loc>https://blog-hugo.joshdover.com/categories/product/</loc>
-    <lastmod>2017-06-01T01:55:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog-hugo.joshdover.com/tags/product/</loc>
     <lastmod>2017-06-01T01:55:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog-hugo.joshdover.com/categories/programming/</loc>
-    <lastmod>2017-02-18T02:38:00+00:00</lastmod>
+    <loc>https://blog-hugo.joshdover.com/categories/product/</loc>
+    <lastmod>2017-06-01T01:55:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -103,13 +97,19 @@
   </url>
   
   <url>
-    <loc>https://blog-hugo.joshdover.com/categories/startups/</loc>
-    <lastmod>2018-04-04T03:39:32+00:00</lastmod>
+    <loc>https://blog-hugo.joshdover.com/categories/programming/</loc>
+    <lastmod>2017-02-18T02:38:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog-hugo.joshdover.com/tags/startups/</loc>
+    <lastmod>2018-04-04T03:39:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog-hugo.joshdover.com/categories/startups/</loc>
     <lastmod>2018-04-04T03:39:32+00:00</lastmod>
     <priority>0</priority>
   </url>
