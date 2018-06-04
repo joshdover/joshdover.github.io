@@ -6,10 +6,21 @@
     <description>Recent content on Josh Dover</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 May 2018 22:57:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jan 2018 04:04:43 +0000</lastBuildDate>
     
 	<atom:link href="https://blog-hugo.joshdover.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://blog-hugo.joshdover.com/about/</link>
+      <pubDate>Thu, 18 Jan 2018 04:04:43 +0000</pubDate>
+      
+      <guid>https://blog-hugo.joshdover.com/about/</guid>
+      <description>I&amp;rsquo;m one of the children-turned-programmers of the 90s. I&amp;rsquo;ve worked at Google, Mozilla, raised over $300k for my own venture, and now I&amp;rsquo;m a Engineering Manager at Cratejoy in Austin, TX.
+In addition to leading teams at Cratejoy, I do software consulting on the side. Think I may be able to help your business? Learn more over here.
+Feel free to tweet me up or shoot me an email!</description>
+    </item>
     
     <item>
       <title>Tech Ethics: Addictive technology</title>
@@ -39,6 +50,18 @@ Regardless of whether or not the people making the decisions at Facebook were ba
       <guid>https://blog-hugo.joshdover.com/post/my-first-six-months-as-an-engineering-lead/</guid>
       <description>It&amp;rsquo;s a transition that&amp;rsquo;s been rehashed by many before me: going from developer to manager. I&amp;rsquo;ve been making this transition over the last six months at Cratejoy and thought I&amp;rsquo;d share what I&amp;rsquo;ve learned so far.
 For context, Cratejoy is a relatively small startup with about a dozen engineers. Before myself, there had only been two other engineering managers (our CTO and my boss). You could definitely say my &amp;ldquo;training&amp;rdquo; was ad hoc.</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s work together</title>
+      <link>https://blog-hugo.joshdover.com/hire-me/</link>
+      <pubDate>Sun, 21 Jan 2018 01:12:26 +0000</pubDate>
+      
+      <guid>https://blog-hugo.joshdover.com/hire-me/</guid>
+      <description>In my spare-time, I help businesses solve problems. My pitch is simple: I help my clients make more money by solving hard problems, usually with software.
+When you hire me, you&amp;rsquo;re not getting a code monkey, you&amp;rsquo;re getting a partner who understands your needs and helps you build a real solution that lasts.
+Why I&amp;rsquo;m a good partner:
+ Laser focused on delivering the business value. Not distracted by frivilous bells and whistles.</description>
     </item>
     
     <item>
