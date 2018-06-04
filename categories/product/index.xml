@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Product on Josh Dover</title>
-    <link>http://joshdover.github.io/categories/product/</link>
+    <link>https://blog-hugo.joshdover.com/categories/product/</link>
     <description>Recent content in Product on Josh Dover</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Jun 2017 01:55:00 +0000</lastBuildDate>
     
-	<atom:link href="http://joshdover.github.io/categories/product/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog-hugo.joshdover.com/categories/product/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Why the Basecamp way of product management hasn&#39;t worked for us</title>
-      <link>http://joshdover.github.io/post/why-the-basecamp-way-of-product-management-doesnt-work-for-us/</link>
+      <link>https://blog-hugo.joshdover.com/post/why-the-basecamp-way-of-product-management-doesnt-work-for-us/</link>
       <pubDate>Thu, 01 Jun 2017 01:55:00 +0000</pubDate>
       
-      <guid>http://joshdover.github.io/post/why-the-basecamp-way-of-product-management-doesnt-work-for-us/</guid>
+      <guid>https://blog-hugo.joshdover.com/post/why-the-basecamp-way-of-product-management-doesnt-work-for-us/</guid>
       <description>A few weeks ago, Jonas Downey from Basecamp posted an article about how they handle software changes while keeping their customers happy. The topics covered are eerily relevant to a recent initiative at Cratejoy. I want to share how I think about and deal with what we define as “product debt.”
 If you haven’t read it, Downey’s central point is that to keep customers happy, you simply can’t remove features.</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leadership on Josh Dover</title>
-    <link>http://joshdover.github.io/tags/leadership/</link>
+    <link>https://blog-hugo.joshdover.com/tags/leadership/</link>
     <description>Recent content in Leadership on Josh Dover</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Mar 2018 11:28:00 +0000</lastBuildDate>
     
-	<atom:link href="http://joshdover.github.io/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog-hugo.joshdover.com/tags/leadership/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My first six months as an engineering lead</title>
-      <link>http://joshdover.github.io/post/my-first-six-months-as-an-engineering-lead/</link>
+      <link>https://blog-hugo.joshdover.com/post/my-first-six-months-as-an-engineering-lead/</link>
       <pubDate>Mon, 19 Mar 2018 11:28:00 +0000</pubDate>
       
-      <guid>http://joshdover.github.io/post/my-first-six-months-as-an-engineering-lead/</guid>
+      <guid>https://blog-hugo.joshdover.com/post/my-first-six-months-as-an-engineering-lead/</guid>
       <description>It&amp;rsquo;s a transition that&amp;rsquo;s been rehashed by many before me: going from developer to manager. I&amp;rsquo;ve been making this transition over the last six months at Cratejoy and thought I&amp;rsquo;d share what I&amp;rsquo;ve learned so far.
 For context, Cratejoy is a relatively small startup with about a dozen engineers. Before myself, there had only been two other engineering managers (our CTO and my boss). You could definitely say my &amp;ldquo;training&amp;rdquo; was ad hoc.</description>
     </item>

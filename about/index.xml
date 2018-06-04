@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Josh Dover</title>
-    <link>http://joshdover.github.io/about/</link>
+    <link>https://blog-hugo.joshdover.com/about/</link>
     <description>Recent content in About on Josh Dover</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jan 2018 04:04:43 +0000</lastBuildDate>
     
-	<atom:link href="http://joshdover.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog-hugo.joshdover.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

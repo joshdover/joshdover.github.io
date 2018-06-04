@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Josh Dover</title>
-    <link>http://joshdover.github.io/categories/</link>
+    <link>https://blog-hugo.joshdover.com/categories/</link>
     <description>Recent content in Categories on Josh Dover</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://joshdover.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog-hugo.joshdover.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ethics</title>
-      <link>http://joshdover.github.io/categories/ethics/</link>
+      <link>https://blog-hugo.joshdover.com/categories/ethics/</link>
       <pubDate>Mon, 28 May 2018 22:57:43 +0000</pubDate>
       
-      <guid>http://joshdover.github.io/categories/ethics/</guid>
+      <guid>https://blog-hugo.joshdover.com/categories/ethics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Leadership</title>
-      <link>http://joshdover.github.io/categories/leadership/</link>
+      <link>https://blog-hugo.joshdover.com/categories/leadership/</link>
       <pubDate>Mon, 19 Mar 2018 11:28:00 +0000</pubDate>
       
-      <guid>http://joshdover.github.io/categories/leadership/</guid>
+      <guid>https://blog-hugo.joshdover.com/categories/leadership/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Product</title>
-      <link>http://joshdover.github.io/categories/product/</link>
+      <link>https://blog-hugo.joshdover.com/categories/product/</link>
       <pubDate>Thu, 01 Jun 2017 01:55:00 +0000</pubDate>
       
-      <guid>http://joshdover.github.io/categories/product/</guid>
+      <guid>https://blog-hugo.joshdover.com/categories/product/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>http://joshdover.github.io/categories/programming/</link>
+      <link>https://blog-hugo.joshdover.com/categories/programming/</link>
       <pubDate>Sat, 18 Feb 2017 02:38:00 +0000</pubDate>
       
-      <guid>http://joshdover.github.io/categories/programming/</guid>
+      <guid>https://blog-hugo.joshdover.com/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Startups</title>
-      <link>http://joshdover.github.io/categories/startups/</link>
+      <link>https://blog-hugo.joshdover.com/categories/startups/</link>
       <pubDate>Wed, 04 Apr 2018 03:39:32 +0000</pubDate>
       
-      <guid>http://joshdover.github.io/categories/startups/</guid>
+      <guid>https://blog-hugo.joshdover.com/categories/startups/</guid>
       <description></description>
     </item>
     
