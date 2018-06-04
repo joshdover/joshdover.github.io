@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Josh Dover</title>
+    <link>http://blog.joshdover.com/tags/</link>
+    <description>Recent content in Tags on Josh Dover</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 May 2018 22:57:43 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.joshdover.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ethics</title>
+      <link>http://blog.joshdover.com/tags/ethics/</link>
+      <pubDate>Mon, 28 May 2018 22:57:43 +0000</pubDate>
+      
+      <guid>http://blog.joshdover.com/tags/ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leadership</title>
+      <link>http://blog.joshdover.com/tags/leadership/</link>
+      <pubDate>Mon, 19 Mar 2018 11:28:00 +0000</pubDate>
+      
+      <guid>http://blog.joshdover.com/tags/leadership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Product</title>
+      <link>http://blog.joshdover.com/tags/product/</link>
+      <pubDate>Thu, 01 Jun 2017 01:55:00 +0000</pubDate>
+      
+      <guid>http://blog.joshdover.com/tags/product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>http://blog.joshdover.com/tags/programming/</link>
+      <pubDate>Sat, 18 Feb 2017 02:38:00 +0000</pubDate>
+      
+      <guid>http://blog.joshdover.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Startups</title>
+      <link>http://blog.joshdover.com/tags/startups/</link>
+      <pubDate>Wed, 04 Apr 2018 03:39:32 +0000</pubDate>
+      
+      <guid>http://blog.joshdover.com/tags/startups/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

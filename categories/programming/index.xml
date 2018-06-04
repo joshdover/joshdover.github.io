@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Josh Dover</title>
+    <link>http://blog.joshdover.com/categories/programming/</link>
+    <description>Recent content in Programming on Josh Dover</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Feb 2017 02:38:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.joshdover.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The human side of writing good software</title>
+      <link>http://blog.joshdover.com/post/the-human-side-of-writing-good-software/</link>
+      <pubDate>Sat, 18 Feb 2017 02:38:00 +0000</pubDate>
+      
+      <guid>http://blog.joshdover.com/post/the-human-side-of-writing-good-software/</guid>
+      <description>A maintainable codebase, the holy grail of every software architect’s dreams. For some engineers, it’s something we obsess over: a harmonious construct of easy-to-modify code, a product that can we can remold to the changing requirements of our customers. Unfortunately, the “business reasons” for investing time into writing good software are less clear and often misunderstood.
+Flexibility has always come at an expensive cost: time. We’ve found practical, quantifiable ways to justify a focus on maintainability: reduced hours fixing bugs, faster iteration cycles, quicker on-boarding of new developers.</description>
+    </item>
+    
+  </channel>
+</rss>
