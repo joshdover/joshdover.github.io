@@ -2,31 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ethics on Josh Dover</title>
-    <link>https://joshdover.github.io/tags/ethics/</link>
+    <link>https://www.joshdover.com/tags/ethics/</link>
     <description>Recent content in Ethics on Josh Dover</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>© Copyright Josh Dover 2019.</copyright>
     <lastBuildDate>Mon, 28 May 2018 22:57:43 +0000</lastBuildDate>
     
-	<atom:link href="https://joshdover.github.io/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.joshdover.com/tags/ethics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Tech Ethics: Addictive technology</title>
-      <link>https://joshdover.github.io/tech-ethics-addictive-technology/</link>
+      <title>The Ethics of Addictive Technology</title>
+      <link>https://www.joshdover.com/tech-ethics-addictive-technology/</link>
       <pubDate>Mon, 28 May 2018 22:57:43 +0000</pubDate>
       
-      <guid>https://joshdover.github.io/tech-ethics-addictive-technology/</guid>
+      <guid>https://www.joshdover.com/tech-ethics-addictive-technology/</guid>
       <description>This is part 2 in a series on ethics in the tech industry. In this post I&amp;rsquo;m going to explore the topic of addictive apps and technology. What roles do they play in our daily lives? How do technologists use psychology to drive engagement? How do we decide if an app exists for the benefit or detriment of the individual and our society?
 This post means to be the start of the conversation, not a prescription of a solution.</description>
     </item>
     
     <item>
       <title>Tech&#39;s Ethical Negligence</title>
-      <link>https://joshdover.github.io/techs-ethical-negligence/</link>
+      <link>https://www.joshdover.com/techs-ethical-negligence/</link>
       <pubDate>Wed, 04 Apr 2018 03:39:32 +0000</pubDate>
       
-      <guid>https://joshdover.github.io/techs-ethical-negligence/</guid>
+      <guid>https://www.joshdover.com/techs-ethical-negligence/</guid>
       <description>Tech is at a cross-roads. The move fast and break things mantra of Silicon Valley is actually breaking things.
 Regardless of whether or not the people making the decisions at Facebook were bad actors (or negligent), the hands building this stuff have a responsibility as well. Despite how smart the engineers of the world think we are, we&amp;rsquo;re still easily manipulated and blinded by an idealistic vision. The hands that built these platforms may have only intended good to flow from their existence.</description>
     </item>

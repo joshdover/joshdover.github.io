@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Josh Dover</title>
+    <link>https://www.joshdover.com/series/</link>
+    <description>Recent content in Series on Josh Dover</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright Josh Dover 2019.</copyright>
+    
+	<atom:link href="https://www.joshdover.com/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tech Ethics</title>
+      <link>https://www.joshdover.com/series/tech-ethics/</link>
+      <pubDate>Mon, 28 May 2018 22:57:43 +0000</pubDate>
+      
+      <guid>https://www.joshdover.com/series/tech-ethics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
