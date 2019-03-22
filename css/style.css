@@ -1,7 +1,14 @@
+@import url('https://rsms.me/inter/inter.css');
+
 body {
   -webkit-font-smoothings: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+body.sans-serif { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  body.sans-serif { font-family: 'Inter var', sans-serif; }
 }
 
 code {
