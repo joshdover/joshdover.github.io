@@ -39,3 +39,7 @@ code {
 .list {
   padding-bottom: 14px;
 }
+
+article {
+  text-align: justify;
+}
