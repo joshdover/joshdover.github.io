@@ -1,4 +1,4 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 
 body {
   -webkit-font-smoothings: antialiased;
@@ -6,9 +6,15 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-body.sans-serif { font-family: 'Inter', sans-serif; }
+body.sans-serif {
+  font-family: "Inter", sans-serif;
+  color: #222;
+  font-weight: 500;
+}
 @supports (font-variation-settings: normal) {
-  body.sans-serif { font-family: 'Inter var', sans-serif; }
+  body.sans-serif {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 code {
@@ -40,6 +46,18 @@ code {
   padding-bottom: 14px;
 }
 
+article.lh-copy {
+  line-height: 1.7;
+}
+
 article p {
   text-align: justify;
+}
+
+blockquote {
+  border-left: 1px solid #333;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
 }
