@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="Work,
+">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="What Working At Elastic Has Been Like" />
+<meta property="og:site_name" content="Josh Dover" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://www.joshdover.com/what-working-at-elastic-has-been-like/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2019-03-30
+" /> <meta property="article:modified_time" content="2019-03-30
+" />
+
+
+<meta property="article:tag" content="Work" />
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@joshdover" />
+<meta name="twitter:creator" content="@joshdover" />
+<meta
+  name="twitter:title"
+  content="What Working At Elastic Has Been Like | Josh Dover"
+/>
+<meta
+  name="twitter:description"
+  content="I really enjoyed Patrick McKenzie&rsquo;s post on working at Stripe and wanted to share my experience at Elastic in a similar fashion.
+I joined Elastic last summer to make understanding large data sets for non-devs easier, mostly by making developing on Kibana simpler. I made the move to Elastic after a 3 year stint at a small eCommerce startup in Austin, called Cratejoy. There I had been managing a medium-sized engineering team.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="https://www.joshdover.com/what-working-at-elastic-has-been-like/" />
+
+
+    <title>What Working At Elastic Has Been Like</title>
+    <link rel="canonical" href="https://www.joshdover.com/what-working-at-elastic-has-been-like/" />
+
+    <link
+      href=""
+      rel="alternate"
+      type="application/rss+xml"
+      title="What Working At Elastic Has Been Like"
+    />
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="https://www.joshdover.com/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-112776256-1', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+</html>
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-50-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="https://www.joshdover.com/" class="b bb bw1 pb1 no-underline black">Josh Dover</a>
+  <span class="b"> / </span>
+  <a href="/post" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">What Working At Elastic Has Been Like</h1>
+    <span class="f6 gray">March 30, 2019</span>
+
+      <article itemprop="articleBody" id="content" class="lh-copy">
+        
+
+<p>I really enjoyed Patrick McKenzie&rsquo;s <a href="https://www.kalzumeus.com/2019/3/18/two-years-at-stripe/">post on working at Stripe</a> and wanted to share my experience at Elastic in a similar fashion.</p>
+
+<p>I joined <a href="https://elastic.co">Elastic</a> last summer to make understanding large data sets for non-devs easier, mostly by making developing on Kibana simpler. I made the move to Elastic after a 3 year stint at a small eCommerce startup in Austin, called Cratejoy. There I had been managing a medium-sized engineering team. When I had joined, Cratejoy had strong fundamentals that gradually slipped away under culture issues, splintered focus, and a shifting market.</p>
+
+<p>I was looking for a bit more stability and a role that came closer to fulfilling me rather than draining me. Here&rsquo;s what I&rsquo;ve learned since starting at Elastic.</p>
+
+<h2 id="working-remotely-allows-for-more-deep-work">Working remotely allows for more deep work</h2>
+
+<p>Elastic started out as distributed company and has remained that way. R&amp;D teams are broadly distributed, mainly across the US, Europe, and China.</p>
+
+<p>This being my first remote job, I expected there to be a lot more meetings. I assumed that without the casual drop-by chats with my colleagues there would need to be a lot more deliberate face time. I was wrong.</p>
+
+<p>We only have a single weekly team meeting with a couple larger R&amp;D meetings thrown in every few weeks. In total, I have generally 3-4 hours a week of scheduled meeting time. This was vastly different than my last job where something like 40-60% of my time in a given week was spent in conference rooms.</p>
+
+<p>Now to be fair, there is more than reason for this difference. For one, Elastic is a more established company with a stable business model. There aren&rsquo;t large strategic changes happening on a weekly basis (and to my surprise, this wasn&rsquo;t because Elastic isn&rsquo;t nimble, it&rsquo;s truly because the product team knows the market and the customers well, more on this later).</p>
+
+<p>However, the main reason for this is the inherent culture of trust that Elastic has built. I was treated with a trust-by-default attitude from everyone I talked to, from day one. Not once has my work ethic, competency, or dedication to the project been questioned. While I think this is by design, I&rsquo;m also convinced it&rsquo;s the most effective way a remote team can get work done. There simply isn&rsquo;t enough time to micromanage people halfway around the world. We have products to ship.</p>
+
+<p>In addition to few standing meetings, asynchronous communication is greatly emphasized. In my first 1-1 with my manager, I was told to turn off Slack often. Email is a common medium of managing the thousands of conversations happening across GitHub, Google Groups, and community forums at Elastic. The company has re-configured Gmail filters to get you started and tool nerds across the company who enjoy sharing their email management hacks and tricks. This reduces interruptions and produces more thoughtful discussions.</p>
+
+<p>All this to say, I&rsquo;m able to get a lot more work done than I have at previous jobs. Interruptions tend to be at a minimum, without compromising immediate help when needed (good documentation goes a long way). At my last job, I was lucky to get 2 long stretches of focused time in a week. Now I&rsquo;m getting on average anywhere from 6-8, focused multi-hour periods of serious flow every week. This has done tremendous things for not only my productivity but my satisfaction with my work. Gone are the days of &ldquo;I wish I had gotten more done today,&rdquo; and I haven&rsquo;t had to give up my nights and weekends.</p>
+
+<h2 id="less-face-time-creates-different-relationships">Less face time creates different relationships</h2>
+
+<p>When you&rsquo;re working right next to a colleague, it&rsquo;s very easy to get into a habit of venting your frustrations with other co-workers. In my experience, this rarely helps the situation get better and instead creates an &ldquo;us vs. them&rdquo; mentality and fractures the team.</p>
+
+<p>When you don&rsquo;t sit next to anyone you work with, you&rsquo;re forced to deal with these frustrations much more slowly. I now find myself often reflecting on the frustration before ever saying something. This often leads to a much more constructive response to the situation, rather than jumping to conclusions.</p>
+
+<p>In a recent example, I found that a major new feature had gotten merged into Kibana with only a single, trivial, automated test. My gut reaction was frustration. Still being new to the company, I got nervous this was the norm. If I had been sitting next to someone, I may have said something that would amount to borderline gossip, tarnishing the reputation of the offending team and putting a stake in the ground on a hardline position.</p>
+
+<p>But without that person to immediately turn to, this time was different. Instead, I thought about times I had done something similar to this and why that had happened. Without any of the context, I had jumped to the conclusion that this person was incompetent, when my past self was no less guilty of the same thing. While my past experience had told me this was a mistake (a position I&rsquo;m still sure of), I had the time to reassess before reacting.</p>
+
+<p>I gave this team the benefit of the doubt. I talked with my lead and the situation was handled appropriately: miscommunications were identified, expectations with the offending team were made clear, and the team made a renewed commitment to code quality. Instead of sowing doubt and mistrust, expectations and standards were reaffirmed. A wildly different outcome that only made the company better, not worse.</p>
+
+<h2 id="remote-work-is-fantastic-for-introverts">Remote work is fantastic for introverts</h2>
+
+<p>The term &ldquo;introvert&rdquo; is certainly a loaded one in modern culture. For me, this means I&rsquo;m social, but that socializing drains me. Getting rid of the constant stimulus of talking to others has done wonders for my overall energy level. Yes, as I mentioned before, there are fewer interruptions, but what I&rsquo;m really talking about here is fewer <em>energy-draining</em> interactions.</p>
+
+<p>At Elastic, we use Zoom for video conferencing quite liberally. It&rsquo;s a fantastic way to not only talk through hard technical problems, but build relationships. But even so, the number of interactions I have over Zoom are quite few, but they tend to be more efficient. When half the attendees are nearing 9pm in their local time, you become cognizant of how much of their evening you&rsquo;re taking up.</p>
+
+<p>For an introvert like me, this is a godsend. Not only am I getting more done during my work hours, I have more energy afterwards. This gives me more time to spend with my fiancé, cook delicious dinners, or read a challenging book. My life feels fuller and less stressful, all while producing and learning more at work.</p>
+
+<h2 id="getting-context-takes-more-deliberate-action">Getting context takes more deliberate action</h2>
+
+<p>One of my passions at any job I&rsquo;ve held is spending time outside my project work to make the development experience better. The main challenge doing this at Elastic is that there&rsquo;s simply not the &ldquo;knowledge transfer by osmosis&rdquo; effect you&rsquo;d see in a traditional office setting.</p>
+
+<p>This made identifying the pain-points in the development experience more difficult. Instead of listening to my colleagues complain about this tool or that, I have to seek out this information more deliberately. Sure, there&rsquo;s things I notice but I can&rsquo;t quite capture everything on my own.</p>
+
+<p>This example leads me to a broader point: to get ahead at a distributed company, I&rsquo;ve found you have to be much more deliberate about learning through asking questions. You&rsquo;re just not going to learn about prior decisions by just being at work, you have to be curious, bother people, and ask.</p>
+
+<p>Before I had realized that this was happening, I was quite demotivated. I found it hard to be creative and take initiative, simply because I didn&rsquo;t have the context about which problems needed solving.</p>
+
+<p>Being deliberate about information gathering is something I&rsquo;m still figuring out. Writing down questions for later and building in &ldquo;curiosity time&rdquo; into my schedule has gone a long way, but I need to explore more techniques.</p>
+
+<h2 id="there-actually-are-teams-without-arrogant-engineers">There actually are teams without arrogant engineers</h2>
+
+<p>A common trope in engineering management literature is the &ldquo;asshole engineer.&rdquo; This is the person who always knows the right answer, belittiles others for not knowing, and generally brings the team down. In simple terms, they&rsquo;re a bully.</p>
+
+<p>One of the first (and strangest) things I noticed about working at Elastic was that I hadn&rsquo;t met such a person. Even the most technically intimidating people (that I was also wary of being bullies) had turned out to be incredibly kind. People here actually do want to lift one another up, spread knowledge, and make the team better.</p>
+
+<p>A related attribute about Elastic culture is a stark lack of sarcasm. My humor is defined by sarcasm. This was a shock at first, but here it makes sense. We have a large number of employees where English is a second (or third) language. Speaking with sarcasm, subtle references, and idioms doesn&rsquo;t translate well and leads to confusion. At Elastic, these ways of speaking are actively discouraged and I believe that&rsquo;s a large contributor to our positive, more supportive culture. Sarcasm can easily degrade into mean or negative remarks. Without it, discussions are lighter, more direct, and kinder.</p>
+
+<p>In this culture, any &ldquo;asshole engineer&rdquo; sticks out like a sore thumb.</p>
+
+<h2 id="customer-focused-product-managers-are-more-effective">Customer-focused product managers are more effective</h2>
+
+<p>At my previous job, I worked with a small team of product managers who were simply asked to do too much. They were product designers, customer researchers, project managers, roadmap planners, bug triagers, and QA all rolled into one. One person attempting to do all of these things isn&rsquo;t going to be very good at any one of them, no matter how great they are.</p>
+
+<p>At Elastic, our product team is almost entirely focused on customer research and market analysis. They know the ins-and-outs of the competitive landscape and have a deep understanding of what problems our customers need to solve. Yes, they still help craft the final solution. They&rsquo;re just much less focused on the minute details of delivery, leaving that to designers and engineers to get right.</p>
+
+<p>Every time a competitor announces a new product, I can expect a detailed analysis in my inbox from a PM explaining how it fits into the landscape of the market. These give me a good understanding of why a customer might or might not choose this new competitor. As an engineer, this helps turn the creative gears on how can we use technology to solve this even better.</p>
+
+<p>From my perspective, this is a much healthier relationship with product managers. I&rsquo;m able to focus on what I know best: delivering technology to customers. Product managers can focus on what they know best: making sure the technology we build solves customers&rsquo; problems. Our strategy is sounder and our products are better because our product team knows these customers better than anyone. I couldn&rsquo;t ask for more than that.</p>
+
+<h2 id="thanks-for-reading">Thanks for reading</h2>
+
+<p>There it is, my brain dump on working at Elastic. Glad you made it this far, but if you&rsquo;d like to ask more feel free to <a href="mailto:me@joshdover.com">send me an email</a>.</p>
+
+<p>If working in this environment sounds interesting to you, <a href="https://www.elastic.co/about/careers/">Elastic is hiring</a>.</p>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: March 30, 2019. Published at: 2019-03-30.">
+        
+      </span>
+
+      
+
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © Copyright Josh Dover 2019.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+  </body>
+  </html>
+</body>

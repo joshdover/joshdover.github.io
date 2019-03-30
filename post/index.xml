@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Josh Dover 2019.</copyright>
-    <lastBuildDate>Mon, 28 May 2018 22:57:43 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Mar 2019 14:57:43 +0000</lastBuildDate>
     
 	<atom:link href="https://www.joshdover.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What Working At Elastic Has Been Like</title>
+      <link>https://www.joshdover.com/what-working-at-elastic-has-been-like/</link>
+      <pubDate>Sat, 30 Mar 2019 14:57:43 +0000</pubDate>
+      
+      <guid>https://www.joshdover.com/what-working-at-elastic-has-been-like/</guid>
+      <description>I really enjoyed Patrick McKenzie&amp;rsquo;s post on working at Stripe and wanted to share my experience at Elastic in a similar fashion.
+I joined Elastic last summer to make understanding large data sets for non-devs easier, mostly by making developing on Kibana simpler. I made the move to Elastic after a 3 year stint at a small eCommerce startup in Austin, called Cratejoy. There I had been managing a medium-sized engineering team.</description>
+    </item>
     
     <item>
       <title>The Ethics of Addictive Technology</title>
