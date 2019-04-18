@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="When Not to Use Jest Snapshots" />
+<meta property="og:site_name" content="Josh Dover" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://www.joshdover.com/when-not-to-use-jest-snapshots/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2019-04-18
+" /> <meta property="article:modified_time" content="2019-04-18
+" />
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@joshdover" />
+<meta name="twitter:creator" content="@joshdover" />
+<meta
+  name="twitter:title"
+  content="When Not to Use Jest Snapshots | Josh Dover"
+/>
+<meta
+  name="twitter:description"
+  content="When Not To Use Jest Snapshots Jest has become the JavaScript community&rsquo;s favorite unit testing tool as of late, largely due to it&rsquo;s fantastic support for testing React components. Although it isn&rsquo;t without it&rsquo;s caveats (it can&rsquo;t be run in a browser), it has many unique features that make testing JavaScript code ergonomic and flexible. In this post, I&rsquo;m going to focus on one of Jest&rsquo;s key features, snapshots, and how to use them effectively.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="https://www.joshdover.com/when-not-to-use-jest-snapshots/" />
+
+
+    <title>When Not to Use Jest Snapshots</title>
+    <link rel="canonical" href="https://www.joshdover.com/when-not-to-use-jest-snapshots/" />
+
+    <link
+      href=""
+      rel="alternate"
+      type="application/rss+xml"
+      title="When Not to Use Jest Snapshots"
+    />
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://www.joshdover.com/css/style.css" />
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-112776256-1', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+</html>
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-50-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="https://www.joshdover.com/" class="b bb bw1 pb1 no-underline black">Josh Dover</a>
+  <span class="b"> / </span>
+  <a href="/post" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">When Not to Use Jest Snapshots</h1>
+    <span class="f6 gray">April 18, 2019</span>
+
+      <article itemprop="articleBody" id="content" class="lh-copy">
+        
+
+<h1 id="when-not-to-use-jest-snapshots">When Not To Use Jest Snapshots</h1>
+
+<p><a href="https://jestjs.io/">Jest</a> has become the JavaScript community&rsquo;s favorite unit testing tool as of late, largely due to it&rsquo;s fantastic support for testing React components. Although it isn&rsquo;t without it&rsquo;s caveats (it can&rsquo;t be run in a browser), it has many unique features that make testing JavaScript code ergonomic and flexible. In this post, I&rsquo;m going to focus on one of Jest&rsquo;s key features, snapshots, and how to use them effectively.</p>
+
+<h2 id="what-are-snapshots">What are snapshots?</h2>
+
+<p>If you&rsquo;re not familiar, snapshots allow you to let the test framework record a value, and save it to disk. If the result of an expected snapshot changes, your test fails. This feature makes writing tests <em>very fast</em> especially when working with UI code that may have large component trees.</p>
+
+<p>Here&rsquo;s a basic example:</p>
+
+<pre><code class="language-js">expect({ x: 1 }).toMatchSnapshot();
+</code></pre>
+
+<p>Jest will record the results of the snapshot (whatever you passed into <code>expect</code>) into the <code>__snapshots__/my_module.test.ts.snap</code> file on the first run and then use that snapshot to compare against future runs. Jest will let you know when the results don&rsquo;t match what it previously recorded.</p>
+
+<p>Jest also supports <em>inline</em> snapshots which put the actual contents of the snapshot inline with the expectation.</p>
+
+<pre><code class="language-js">expect({ x: 1 }).toMatchInlineSnapshot();
+</code></pre>
+
+<p>Jest will update the test source file on the first run to include the snapshot data.</p>
+
+<pre><code class="language-js">expect({ x: 1 }).toMatchInlineSnapshot(`
+Object {
+  &quot;x&quot;: 1,
+}
+`);
+</code></pre>
+
+<p>Nice! Now we can see the snapshot right inside our test.</p>
+
+<p>One of the best parts about Jest snapshots is how good Jest is at explaining <em>why</em> a snapshot test failed, such as which key of an object doesn&rsquo;t match the snapshot:</p>
+
+<pre><code class="language-shell">Received value does not match stored snapshot &quot;mytest 1&quot;    
+
+- Snapshot
++ Received
+
+  Object {
+-   &quot;x&quot;: 1,
++   &quot;x&quot;: 2,
+  }
+
+&gt; 1 | expect({ x: 2 }).toMatchInlineSnapshot(`
+    |                  ^
+  2 | Object {
+  3 |   &quot;x&quot;: 1,
+  4 | }
+</code></pre>
+
+<p>Congrats, you now know how to use Jest snapshots! There are other details how objects are serialized, but for 95% of cases, the default serializer will do just fine.</p>
+
+<h2 id="when-snapshots-snap-back">When snapshots snap back</h2>
+
+<p>Tests just got easier right? Half of your expectations can be written by the computer! What&rsquo;s to complain about? Well, here&rsquo;s where my <del>rant</del> explanation begins.</p>
+
+<h3 id="snapshots-can-discourage-writing-good-tests">Snapshots can discourage writing good tests</h3>
+
+<p>A good test unit has a few, unalienable qualities:</p>
+
+<ul>
+<li>It only tests one thing, it&rsquo;s intentional</li>
+<li>It only tests what it&rsquo;s supposed to</li>
+<li>It is obvious what the test does</li>
+</ul>
+
+<p>You can violate all of three of these pretty damn quickly with a bad application of snapshots.</p>
+
+<p>It&rsquo;s too easy to drop a <code>toMatchSnapshot()</code> call into a test, think &ldquo;I know this code works so I&rsquo;ll just assume the snapshot is right&rdquo;, never look at the generated snapshot (because it&rsquo;s huge, in another file, or both) and move on your merry way. Only later do you find out that, yes, your code did work 10 minutes ago, but you changed something small and now it&rsquo;s broken with a test suite that says it&rsquo;s working. Doh. I only know this happens because I&rsquo;ve done it.</p>
+
+<p>TDD was all about programming with intention rather than by coincidence. Snapshots threw that all out the window in on fell swoop. Snapshots are not all bad, and maybe I just miss tests that explain behavior rather verify state. But we can do better to write thoughtful, useful tests.</p>
+
+<p>Think twice before you take the easy way out and make sure what you&rsquo;re snapshotting is actually what your test should be verifying. It&rsquo;s also good to think about how the error message will look when this fails. Will it be obvious <em>why</em> the test is failing to another developer?</p>
+
+<h3 id="snapshots-can-create-false-negatives">Snapshots can create false negatives</h3>
+
+<p>It&rsquo;s too easy to snapshot implementation details that shouldn&rsquo;t effect what your test cares about. Take this example:</p>
+
+<pre><code class="language-js">class MyService {
+  constructor() {
+    this.publicValue = 1;
+    this._internalState = 0;
+  }
+}
+
+expect(new MyService()).toMatchInlineSnapshot(`
+MyService {
+  &quot;_internalState&quot;: 0,
+  &quot;publicValue&quot;: 1,
+}
+`);
+</code></pre>
+
+<p>It&rsquo;s a toy example, but what&rsquo;s wrong here is obvious: we&rsquo;re now testing implementation details rather than behavior. Now, if I change how <code>_internalState</code> is used or represented, I&rsquo;ve broken a test even though the external behavior has not changed. While you could blame this on JavaScript not having true private fields, you have to admit that snapshots encourage this pattern.</p>
+
+<p>You might think this is just a novice mistake, but this is something I&rsquo;ve seen quite a bit. I suspect it has more to do with the fact that snapshots are stored in separate files by default (non-inline). Many developers don&rsquo;t even notice that they&rsquo;re testing internal details.</p>
+
+<p>The testing tools we use certainly shape the quality and robustness of our suite. False negatives create a brittle and unreliable test suite. Unreliable test suites become disheartening quick, in turn discouraging writing tests at all.</p>
+
+<h3 id="snapshots-can-make-tests-hard-to-read">Snapshots can make tests hard to read</h3>
+
+<p>When I open a test file and I can actually understand how the module should work by reading the tests, <em>I swoon</em>. Consistent BDD structure and good naming can help a lot with this, but at the end of the day the test implementation needs to be clear.</p>
+
+<p>Before snapshots came onto the horizon, I was already firmly in the &ldquo;no magic tests&rdquo; camp. I&rsquo;d rather my test suite be a lot of copy/paste than be implemented with a magic generic function that takes me an hour to understand. Understandability of a code base is an incredibly valuable asset. Doubly so in the code that supposed to serve as your &ldquo;spec.&rdquo;</p>
+
+<p>I believe snapshots, when used well, help increase readability quite a bit. Paired with a good serializer, some object structures and state become infinitely more readable. Take a rendered React component for example:</p>
+
+<pre><code class="language-jsx">const MyComponent = () =&gt; &lt;h1&gt;Hello&lt;/h1&gt;;
+
+expect(render(&lt;MyComponent /&gt;)).toMatchInlineSnapshot(`
+&lt;h1&gt;
+  Hello
+&lt;/h1&gt;
+`);
+</code></pre>
+
+<p>It&rsquo;s super clear what this component should do, just by reading the test. Great!</p>
+
+<p>However, there&rsquo;s two ways this goes sideways: using non-inline snapshots (the default), or testing really big objects (!). When you do either of these things, you put the onus on the reader to figure out what the hell you were trying to test in the first place.</p>
+
+<pre><code class="language-jsx">// Non-inline snapshot. I have no idea what MyComponent does :(
+expect(render(&lt;MyComponent /&gt;)).toMatchSnapshot();
+
+// Big ol' object. I have no idea which field(s) matter :(
+expect(MyObjectWith20Keys).toMatchInlineSnapshot(`{ ... }`);
+</code></pre>
+
+<h2 id="ok-so-when-should-i-use-them">OK, so when should I use them?</h2>
+
+<p>If you&rsquo;ve made it this far, you&rsquo;ve might have noticed two things about my opinion on snapshots:</p>
+
+<ul>
+<li>Non-inline snapshots are almost always the wrong choice</li>
+<li>Wide or deep objects do not mix well with snapshots (wide: many keys, deep: nested structures)</li>
+</ul>
+
+<p>If you avoid these two pitfalls, snapshots will serve you pretty well. You can write clear, readable, and intentional tests faster than you could without them. Just don&rsquo;t sacrifice taking the time to write a good test for quickly writing a bad one. Bad tests just make your test suite less useful and your team less productive.</p>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: April 18, 2019. Published at: 2019-04-18.">
+        
+      </span>
+
+      
+
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © Copyright Josh Dover 2019.
+      </p>
+    </div>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-jsx.min.js"></script>
+
+  </body>
+  </html>
+</body>
