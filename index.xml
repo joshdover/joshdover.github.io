@@ -18,7 +18,7 @@
       <pubDate>Thu, 18 Apr 2019 18:05:46 -0500</pubDate>
       
       <guid>https://www.joshdover.com/when-not-to-use-jest-snapshots/</guid>
-      <description>When Not To Use Jest Snapshots Jest has become the JavaScript community&amp;rsquo;s favorite unit testing tool as of late, largely due to it&amp;rsquo;s fantastic support for testing React components. Although it isn&amp;rsquo;t without it&amp;rsquo;s caveats (it can&amp;rsquo;t be run in a browser), it has many unique features that make testing JavaScript code ergonomic and flexible. In this post, I&amp;rsquo;m going to focus on one of Jest&amp;rsquo;s key features, snapshots, and how to use them effectively.</description>
+      <description>Jest has become the JavaScript community&amp;rsquo;s favorite unit testing tool as of late, largely due to it&amp;rsquo;s fantastic support for testing React components. Although it isn&amp;rsquo;t without it&amp;rsquo;s caveats (it can&amp;rsquo;t be run in a browser), it has many unique features that make testing JavaScript code ergonomic and flexible. In this post, I&amp;rsquo;m going to focus on one of Jest&amp;rsquo;s key features, snapshots, and how to use them effectively.</description>
     </item>
     
     <item>
