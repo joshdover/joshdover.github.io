@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: joshdover.com
+Token: 3066b71830b454fc268156d48d7401c6c18b30f4312161d183cdbf59bca5f9ef
