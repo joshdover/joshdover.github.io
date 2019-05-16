@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/ArticlePreview.svelte.css","webpack:///./src/Feed.svelte.css"],"names":[],"mappings":"AAAA,sBAAsB,eAAe,sBAAsB,a;ACA3D,kBAAkB,e","file":"bundle.css","sourcesContent":["article.svelte-43f9zm{cursor:pointer}.dimNow.svelte-43f9zm{opacity:0.5 }","h2.svelte-1hcqqt1{cursor:pointer}"],"sourceRoot":""}
