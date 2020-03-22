@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Josh Dover</title>
-    <link>https://www.joshdover.com/projects/</link>
-    <description>Recent content in Projects on Josh Dover</description>
+    <title>Resume on Josh Dover</title>
+    <link>https://www.joshdover.com/resume/</link>
+    <description>Recent content in Resume on Josh Dover</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Josh Dover 2020.</copyright>
     <lastBuildDate>Thu, 18 Jan 2018 04:04:43 +0000</lastBuildDate>
     
-	<atom:link href="https://www.joshdover.com/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.joshdover.com/resume/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
